@@ -43,6 +43,7 @@ export default async function print(
 
   if (printDialog) {
     args.push("-print-dialog");
+    args.push("-exit-when-done");
   } else {
     if (printer) {
       args.push("-print-to", printer);

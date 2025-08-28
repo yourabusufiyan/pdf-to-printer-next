@@ -52,6 +52,7 @@ it("sends the PDF file to the default printer", async () => {
   expect(execAsync).toHaveBeenCalledWith(sumatraPdfPath, [
     "-print-to-default",
     "-silent",
+    "-exit-when-done",
     filename,
   ]);
 });
